@@ -1,0 +1,38 @@
+.Navbar {
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13rem;
+  display: flex;
+  background: #fff;
+}
+.LinkList {
+  display: flex;
+  padding: 0;
+  gap: 2.4rem;
+  align-items: center;
+}
+.Link {
+  list-style: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.LightLink {
+  list-style: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.Logo {
+  margin-top: 0.5rem;
+}
+.Highlight {
+  color: var(--color-primary);
+}
+.LinkListText {
+  display: flex;
+  gap: 1.9rem;
+}

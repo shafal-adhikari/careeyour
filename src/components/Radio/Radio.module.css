@@ -1,0 +1,10 @@
+.RadioButton {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  color: #000000cc;
+}
+.RadioButton img:hover {
+  opacity: 0.8;
+}

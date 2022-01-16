@@ -1,0 +1,44 @@
+.Card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  width: 28rem;
+  height: 32rem;
+  margin-top: 4rem;
+  padding: 2.4rem;
+  gap: 1.6rem;
+}
+.MailIconHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MailHeading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000000e5;
+}
+.MailIcon {
+  display: flex;
+  width: 80%;
+  gap: 0.8rem;
+  align-items: center;
+}
+.MailSubHead {
+  font-size: 1.4rem;
+  color: #00000099;
+  font-weight: 400;
+}
+.Input {
+  width: 100% !important;
+  border: 0.2rem solid #0000004d !important;
+  border-radius: 0.5rem !important;
+  padding: 1.6rem 0 !important;
+  padding-left: 3rem !important;
+}
+.Description {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1rem;
+}

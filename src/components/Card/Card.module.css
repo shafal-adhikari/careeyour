@@ -1,0 +1,59 @@
+.Card {
+  background: #fff;
+  display: flex;
+  border-radius: 0.5rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  width: 58rem;
+  height: 31rem;
+  padding: 1.5rem;
+  justify-content: space-around;
+}
+.LogoHolder {
+  width: 14%;
+}
+.DetailsHolder {
+  width: 90%;
+  padding: 1rem 0;
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.JobTitle {
+  font-size: 2rem;
+  color: #000000e5;
+  font-weight: 500;
+}
+.SubTitle {
+  font-size: 1.4rem;
+  color: #000000e5;
+}
+.TagHolder {
+  display: flex;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.FeatureHolder {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+.Description {
+  font-size: 1.4rem;
+  color: #000000e9;
+  margin: 1.5rem 0;
+  text-align: justify;
+  width: 95%;
+  font-weight: 300;
+}
+.Time {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  width: 5rem;
+  margin-left: 0.8rem;
+}
+.TimeHolder {
+  display: flex;
+  align-items: center;
+}
