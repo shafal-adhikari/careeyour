@@ -1,15 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Card.module.css";
 import LogoSample from "../../assets/company-logo-sample.png";
 import JobTag from "../JobTag";
 import ApplyIcon from "../../assets/icons/apply-icon.png";
 import ResponsiveIcon from "../../assets/icons/responsive-icon.png";
 import PromotedIcon from "../../assets/icons/promoted-icon.png";
+import threeDots from "../../assets/icons/threedots.png";
+import SaveImg from "../../assets/icons/save.png";
+import ShareImg from "../../assets/icons/share.png";
 function JobCard() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className={classes.Card}>
+      <div className={classes.ThreeDots}>
+        <img
+          src={threeDots}
+          className={classes.DotsImage}
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
+        {menuOpen && (
+          <div className={classes.Menu}>
+            <div className={classes.MenuItem}>
+              <img src={SaveImg} />
+              <span>Save</span>
+            </div>
+            <div className={classes.MenuItem}>
+              <img src={ShareImg} />
+              <span>Share</span>
+            </div>
+          </div>
+        )}
+      </div>
       <div className={classes.LogoHolder}>
-        <img src={LogoSample} alt="Company" />
+        <img src={LogoSample} alt="Company" className={classes.LogoSample} />
       </div>
       <div className={classes.DetailsHolder}>
         <h2 className={classes.JobTitle}>Backend Developer</h2>

@@ -1,0 +1,26 @@
+.FilterMobile {
+  border: 1px solid #0000004d;
+  min-width: 12.5rem;
+  height: 3.5rem;
+  border-radius: 10rem;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  display: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.Active {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 600px) {
+  .FilterMobile {
+    display: flex;
+  }
+}

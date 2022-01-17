@@ -6,8 +6,8 @@ function CheckBox({ style, isChecked, label, ...props }) {
   const [checked, setChecked] = useState(isChecked ? true : false);
   const image = checked ? Checked : Uncheked;
   return (
-    <div className={classes.CheckBoxDiv}>
-      <img src={image} onClick={() => setChecked(!checked)} />
+    <div className={classes.CheckBoxDiv} onClick={() => setChecked(!checked)}>
+      <img src={image} />
       {label && <span className={classes.Label}>{label}</span>}
     </div>
   );

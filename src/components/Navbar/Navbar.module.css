@@ -36,3 +36,24 @@
   display: flex;
   gap: 1.9rem;
 }
+.BurgerIcon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .Navbar {
+    background: var(--color-dark);
+    padding: 2rem;
+    padding-top: 5.4rem;
+  }
+  .LinkListText {
+    display: none;
+  }
+  .LightLink {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  .BurgerIcon {
+    display: flex;
+  }
+}

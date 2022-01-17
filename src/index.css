@@ -24,3 +24,8 @@ html {
 .Highlight {
   color: var(--color-primary);
 }
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}

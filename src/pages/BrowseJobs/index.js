@@ -7,6 +7,7 @@ import CheckBox from "../../components/CheckBox/CheckBox";
 import Radio from "../../components/Radio";
 import FilterIcon from "../../assets/icons/filter-icon.png";
 import JobAlertCard from "../../components/JobAlertCard";
+import FilterMobile from "../../components/FilterMobile";
 function BrowseJobs() {
   useEffect(() => {
     seo({
@@ -22,23 +23,30 @@ function BrowseJobs() {
             <img src={FilterIcon} />
             <span className={classes.FilterSpan}>Filters</span>
           </div>
-          <span className={classes.FilterSpan}>Reset</span>
+          {window.outerWidth > 700 && (
+            <span className={classes.FilterSpan}>Reset</span>
+          )}
+          <FilterMobile>Sort by Job</FilterMobile>
+          <FilterMobile active>Sort by Job Type</FilterMobile>
         </div>
-        <FilterCard>
-          <span className={classes.FilterHeading}>Listed Date</span>
-          <Radio style={classes.FilterCheckBox} />
-          <div className={classes.Line}></div>
-          <span className={classes.FilterHeading}>Job Type</span>
-          <div className={classes.FilterCheckBox}>
-            <CheckBox label="Full time" />
-            <CheckBox label="Part time" />
-            <CheckBox label="Internship" />
-            <CheckBox label="Entry level" />
-            <CheckBox label="Mid level" />
-            <CheckBox label="Senior level" />
-          </div>
-        </FilterCard>
+        {window.outerWidth > 700 && (
+          <FilterCard>
+            <span className={classes.FilterHeading}>Listed Date</span>
+            <Radio style={classes.FilterCheckBox} />
+            <div className={classes.Line}></div>
+            <span className={classes.FilterHeading}>Job Type</span>
+            <div className={classes.FilterCheckBox}>
+              <CheckBox label="Full time" />
+              <CheckBox label="Part time" />
+              <CheckBox label="Internship" />
+              <CheckBox label="Entry level" />
+              <CheckBox label="Mid level" />
+              <CheckBox label="Senior level" />
+            </div>
+          </FilterCard>
+        )}
       </div>
+
       <div className={classes.JobBox}>
         <div className={classes.JobBoxHeading}>
           <span className={classes.FilterSpan}>412 Jobs - Page 1 of 14</span>

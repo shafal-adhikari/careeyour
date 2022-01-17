@@ -12,20 +12,25 @@ function Header() {
         type="text"
         icon={SearchIcon}
         placeholder="Job title, Company, keyword"
+        className={classes.SearchInput}
       ></Input>
-      <Input
-        type="text"
-        icon={LocationIcon}
-        placeholder="City, district, chowk"
-      ></Input>
-      <Input
-        type="text"
-        icon={SearchIcon}
-        placeholder="Job title, Company, keyword"
-      ></Input>
-      <Button className="hello" placeholder="safda">
-        Search Jobs
-      </Button>
+      {window.outerWidth > 700 && (
+        <>
+          <Input
+            type="text"
+            icon={LocationIcon}
+            placeholder="City, district, chowk"
+          ></Input>
+          <Input
+            type="text"
+            icon={SearchIcon}
+            placeholder="Job title, Company, keyword"
+          ></Input>
+          <Button className="hello" placeholder="safda">
+            Search Jobs
+          </Button>
+        </>
+      )}
     </div>
   );
 }
